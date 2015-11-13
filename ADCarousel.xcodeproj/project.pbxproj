@@ -54,6 +54,7 @@
 		0785D6351BF5E39B001A2257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0785D6411BF5E48E001A2257 /* CLADCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLADCarousel.h; sourceTree = "<group>"; };
 		0785D6421BF5E48E001A2257 /* CLADCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLADCarousel.m; sourceTree = "<group>"; };
+		0785D6441BF5EAA8001A2257 /* AD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AD-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 		0785D60E1BF5E39B001A2257 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0785D6441BF5EAA8001A2257 /* AD-Prefix.pch */,
 				0785D60F1BF5E39B001A2257 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -504,6 +506,7 @@
 				0785D63A1BF5E39B001A2257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0785D63B1BF5E39B001A2257 /* Build configuration list for PBXNativeTarget "ADCarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +515,7 @@
 				0785D63D1BF5E39B001A2257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0785D63E1BF5E39B001A2257 /* Build configuration list for PBXNativeTarget "ADCarouselUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +524,7 @@
 				0785D6401BF5E39B001A2257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

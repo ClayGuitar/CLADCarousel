@@ -1,0 +1,89 @@
+//
+// Prefix header for all source files of the 'AD' target in the 'AD' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//
+//  PrefixHeader.pch
+//  RecycleimagView
+//
+//  Created by aayongche on 15/10/29.
+//  Copyright © 2015年 aayongche. All rights reserved.
+//
+
+/**
+ *  注掉就为线上环境，用来区分测试或者线上服务器
+ *
+ */
+#define TESTENVIRONMENT @"environment"
+
+#ifdef TESTENVIRONMENT
+
+#else
+
+#endif
+
+/**
+ *  当Xcode为Release时不输出，为Debug时输出
+ *
+ *  @param ...
+ *
+ *  @return
+ */
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+/**
+ *  打印的时候可以看到类名、方法以及行数
+ *
+ */
+//#define NSLog(fmt,...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ## __VA_ARGS__);
+
+#else
+#define NSLog(...) {}
+#endif
+
+/**
+ *  颜色
+ *
+ *  @param r 红色
+ *  @param g 绿色
+ *  @param b 蓝色
+ *
+ *  @return RGB
+ */
+#define RGB_Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGB_ColorAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define RGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+#define RGBALPHA(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:(a)]
+
+/**
+ *  屏幕大小
+ */
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+//判断操作系统版本   IOS6、IOS5.1、IOS5.0、IOS4.3等
+#define SYSTEM_VERSION_EQUAL_TO(v) \
+([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v) \
+([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) \
+([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v) \
+([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v) \
+([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
