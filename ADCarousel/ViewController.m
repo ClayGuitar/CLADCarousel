@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CLADCarousel.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray *dataArray = [NSMutableArray array];
+    UIImage *image1 = [UIImage imageNamed:@"a"];
+    UIImage *image2 = [UIImage imageNamed:@"d"];
+    UIImage *image3 = [UIImage imageNamed:@"Default"];
+    [dataArray addObject:image1];
+    [dataArray addObject:image2];
+    [dataArray addObject:image3];
+    CLADCarousel *ad = [CLADCarousel scrollViewWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 200) AndPlaceholderImageArray:dataArray AndImageClickBlock:^(NSInteger index) {
+        NSLog(@"%ld",(long)index);
+    }];
+    [self.view addSubview:ad];
+    ad.time = 2;
+    [ad beginTimer];
+    
 }
 
 - (void)didReceiveMemoryWarning {
