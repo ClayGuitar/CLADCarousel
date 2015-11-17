@@ -28,10 +28,7 @@ typedef void(^imageClickBlock)(NSInteger index);
  *  轮播的时间
  */
 @property (nonatomic, assign) int time;
-/**
- *  默认图片
- */
-@property (nonatomic, strong) NSString *placeholderImageStr;
+
 
 /**
  *  创建一个CLADCarousel的实例
@@ -49,10 +46,10 @@ typedef void(^imageClickBlock)(NSInteger index);
  *  @param frame      坐标
  *  @param placeholderImageArray      对应的默认图片显示数组
  *  @param clickBlock 在页面的点击事件
- *
+ *  @param image   默认图片
  *  @return 返回一个CLADCarousel的实例
  */
-+ (instancetype)scrollViewWithFrame:(CGRect)frame AndPlaceholderImageArray:(NSArray *)placeholderImageArray AndImageClickBlock:(imageClickBlock)clickBlock;
+//+ (instancetype)scrollViewWithFrame:(CGRect)frame AndPlaceholderImageArray:(NSArray *)placeholderImageArray AndPlaceholderImage:(UIImage *)image AndImageClickBlock:(imageClickBlock)clickBlock;
 
 /**
  *  开始定时器
@@ -62,6 +59,10 @@ typedef void(^imageClickBlock)(NSInteger index);
  *  结束定时器
  */
 - (void)stopTimer;
+/**
+ *  重新加载广告imageArray
+ */
+- (void)reloadImageArr:(NSArray *)imageArr;
 
 
 @end

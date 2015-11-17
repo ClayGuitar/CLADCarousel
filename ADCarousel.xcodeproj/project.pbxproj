@@ -12,6 +12,7 @@
 		072C5E511BF9DE9600E1E325 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 072C5E4C1BF9DE9600E1E325 /* Default-568h@2x.png */; };
 		072C5E521BF9DE9600E1E325 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 072C5E4D1BF9DE9600E1E325 /* Default.png */; };
 		072C5E531BF9DE9600E1E325 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 072C5E4E1BF9DE9600E1E325 /* Default@2x.png */; };
+		072C5E561BFAC9CB00E1E325 /* MainPageArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 072C5E551BFAC9CB00E1E325 /* MainPageArcView.m */; };
 		0785D6101BF5E39B001A2257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0785D60F1BF5E39B001A2257 /* main.m */; };
 		0785D6131BF5E39B001A2257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0785D6121BF5E39B001A2257 /* AppDelegate.m */; };
 		0785D6161BF5E39B001A2257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0785D6151BF5E39B001A2257 /* ViewController.m */; };
@@ -63,6 +64,8 @@
 		072C5E4C1BF9DE9600E1E325 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		072C5E4D1BF9DE9600E1E325 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		072C5E4E1BF9DE9600E1E325 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		072C5E541BFAC9CB00E1E325 /* MainPageArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageArcView.h; sourceTree = "<group>"; };
+		072C5E551BFAC9CB00E1E325 /* MainPageArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageArcView.m; sourceTree = "<group>"; };
 		0785D60B1BF5E39B001A2257 /* ADCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0785D60F1BF5E39B001A2257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0785D6111BF5E39B001A2257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				0785D6421BF5E48E001A2257 /* CLADCarousel.m */,
 				0785D67D1BF9877F001A2257 /* ADModel.h */,
 				0785D67E1BF9877F001A2257 /* ADModel.m */,
+				072C5E541BFAC9CB00E1E325 /* MainPageArcView.h */,
+				072C5E551BFAC9CB00E1E325 /* MainPageArcView.m */,
 			);
 			path = ADCarousel;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0785D67A1BF98502001A2257 /* UIImageView+HighlightedWebCache.m in Sources */,
+				072C5E561BFAC9CB00E1E325 /* MainPageArcView.m in Sources */,
 				0785D67F1BF9877F001A2257 /* ADModel.m in Sources */,
 				0785D6781BF98502001A2257 /* UIImage+MultiFormat.m in Sources */,
 				0785D6731BF98502001A2257 /* SDWebImageDownloaderOperation.m in Sources */,
