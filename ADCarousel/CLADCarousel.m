@@ -2,7 +2,7 @@
 //  CLADCarousel.m
 //  ADCarousel
 //
-//  Created by aayongche on 15/11/13.
+//  Created by 程磊 on 15/11/13.
 //  Copyright © 2015年 aayongche. All rights reserved.
 //
 
